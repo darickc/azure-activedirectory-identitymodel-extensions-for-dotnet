@@ -55,12 +55,12 @@ namespace System.IdentityModel.Tokens.Jwt
         /// <summary>
         /// JWS - Token format: 'header.payload.signature'. Signature is optional, but '.' is required.
         /// </summary>
-        public const string JsonCompactSerializationRegex = @"^[A-Za-z0-9-_]+\.[A-Za-z0-9-_]+\.[A-Za-z0-9-_]*$";
+        public const string JsonCompactSerializationRegex = @"^[A-Za-z0-9/+=]+\.[A-Za-z0-9/+=]+\.[A-Za-z0-9/+=]*$";
 
         /// <summary>
         /// JWE - Token format: 'protectedheader.encryptedkey.iv.cyphertext.authenticationtag'.
         /// </summary>
-        public const string JweCompactSerializationRegex = @"^[A-Za-z0-9-_]+\.[A-Za-z0-9-_]*\.[A-Za-z0-9-_]+\.[A-Za-z0-9-_]+\.[A-Za-z0-9-_]+$";
+        public const string JweCompactSerializationRegex = @"^[A-Za-z0-9/+=]+\.[A-Za-z0-9/+=]*\.[A-Za-z0-9/+=]+\.[A-Za-z0-9/+=]+\.[A-Za-z0-9/+=]+$";
 
         /// <summary>
         /// The number of parts in a JWE token.
